@@ -46,4 +46,8 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     { E00,  E01,  E02,  E03,  E04,  E05,  E06,  E07,  E08,  E09,  E10,  E11  }  \
 }
 
+// Adjust hold/tap and doubletap timing
+#define DOUBLETAP_TIME_LIMIT 200
+#define TIME_TILL_HOLD 140
+
 #endif /* KEYBOARD_CONFIG_H */
