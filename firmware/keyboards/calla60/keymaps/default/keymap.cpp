@@ -55,7 +55,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
                                    KC_NO,   KC_NO,   LAYER_1, KC_NO,    KC_NO,   LAYER_2, KC_NO,   KC_NO
         );
 
-    uint32_t singletap[MATRIX_ROWS][MATRIX_COLS] =
+/*    uint32_t singletap[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
@@ -63,8 +63,8 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
                                    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO
         );
-
-    uint32_t doubletap[MATRIX_ROWS][MATRIX_COLS] =
+*/
+/*    uint32_t doubletap[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
@@ -72,13 +72,13 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
                                    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO
         );
-
+*/
     uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                      KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_HOME, KC_UP,   KC_END,  KC_NO,   KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO,
-        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_RSFT,
+        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_DEL,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_RSFT,
                                    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_MENU
         );
     
@@ -100,8 +100,8 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
             matrix[row][col].addActivation(_L0, Method::PRESS, press[row][col]);
             matrix[row][col].addActivation(_L0, Method::MT_TAP, tap[row][col]);
             matrix[row][col].addActivation(_L0, Method::MT_HOLD, hold[row][col]);
-            matrix[row][col].addActivation(_L0, Method::DT_TAP, singletap[row][col]);
-            matrix[row][col].addActivation(_L0, Method::DT_DOUBLETAP, doubletap[row][col]);
+//            matrix[row][col].addActivation(_L0, Method::DT_TAP, singletap[row][col]);
+//            matrix[row][col].addActivation(_L0, Method::DT_DOUBLETAP, doubletap[row][col]);
             matrix[row][col].addActivation(_L1, Method::PRESS, layer1[row][col]);
             matrix[row][col].addActivation(_L2, Method::PRESS, layer2[row][col]);
         }
