@@ -27,6 +27,25 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KEYMAP_H
 
 #define KC_CAP_D MOD(MOD_LSHIFT, KC_D)
+// Win/Linux shortcuts
+#define KC_CUT  LCTL(KC_X)  // CUT
+#define KC_CPY  LCTL(KC_C)  // COPY
+#define KC_PST  LCTL(KC_V)  // PASTE
+#define KC_UND  LCTL(KC_Z)  // UNDO
+#define KC_REDO LCTL(KC_Y)  // REDO
+#define KC_PRTN LCTL(KC_P)  // Print
+#define KC_SVE  LCTL(KC_S)  // Save
+#define KC_DUP  LCTL(KC_D)  // Duplicate line
+#define KC_LOCK LGUI(KC_L)  // Lock
+
+// Mac shortcuts
+#define KC_MCUT  LGUI(KC_X) // CUT
+#define KC_MCPY  LGUI(KC_C) // COPY
+#define KC_MPST  LGUI(KC_V) // PASTE
+#define KC_MUND  LGUI(KC_Z) // UNDO
+#define KC_MRDO  LGUI(KC_Y) // REDO
+#define KC_MSVE  LGUI(KC_S) // Save
+
 #define NUM_LAYERS 3
 
 #define _L0  0
