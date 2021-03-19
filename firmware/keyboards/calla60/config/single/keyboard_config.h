@@ -29,7 +29,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 #define DEVICE_MODEL                        "Calla60_V1"                        /**< Name of device. Will be included in the advertising data. */
 
-#define MANUFACTURER_NAME                   "weboards.com"                  /**< Manufacturer. Will be passed to Device Information Service. */
+#define MANUFACTURER_NAME                   "weboards.com"                      /**< Manufacturer. Will be passed to Device Information Service. */
 
 
 #define KEYMAP( \
@@ -47,7 +47,8 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 }
 
 // Adjust hold/tap and doubletap timing
-#define DOUBLETAP_TIME_LIMIT 200
-#define TIME_TILL_HOLD 140
+#define DOUBLETAP_TIME_LIMIT 200    // [default = 200]
+#define TIME_TILL_HOLD 200          // [default = 200]
+#define DEBOUNCETIME 3              // [default = 3] changing this to 1 and you will have problems with the debounce logic - repeated keys perhaps...
 
 #endif /* KEYBOARD_CONFIG_H */
