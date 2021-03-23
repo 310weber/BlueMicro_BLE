@@ -34,7 +34,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,    KC_NO,
         KC_NO,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_LBRC,    KC_RBRC, KC_H,    KC_J,    KC_K,    KC_L,   KC_SCLN, KC_QUOT,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_NO,      KC_BSPC, KC_N,    KC_M,    KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
-                                   KC_LWIN, KC_LALT, KC_NO,   KC_SPC,     KC_ENT,  KC_NO,   KC_MENU, KC_RCTL
+                                   KC_LCTL, KC_LALT, LAYER_1, KC_SPC,     KC_ENT,  LAYER_2, KC_MENU, KC_RCTL
         );
 
     uint32_t tap[MATRIX_ROWS][MATRIX_COLS] =
@@ -50,9 +50,9 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KEYMAP(
         KC_GRV,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_BSLS,
-        KC_LCTL, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_LCMD, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-                                   KC_NO,   KC_NO,   LAYER_1, KC_NO,    KC_NO,   LAYER_2, KC_NO,   KC_NO
+                                   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO
         );
 
 /*    uint32_t singletap[MATRIX_ROWS][MATRIX_COLS] =
@@ -77,7 +77,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KEYMAP(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                      KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                      KC_NO,   KC_HOME, KC_UP,   KC_END,  KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO,
+        KC_LCMD, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO,
         KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_DEL,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_RSFT,
                                    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_MENU
         );
@@ -85,9 +85,9 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                      KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-        KC_NO,   KC_NO,   KC_HOME, KC_UP,   KC_END,  KC_NO,                      KC_NO,   KC_NO,   KC_NO,   OUT_AUTO,   BLEPROFILE_1,   PRINT_BATTERY,
-        KC_NO,   KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   OUT_BT,   BLEPROFILE_2,   PRINT_BLE,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   OUT_USB,   BLEPROFILE_3,   PRINT_INFO,
+        KC_NO,   KC_NO,   KC_MPRV, KC_MPLY, KC_MNXT, KC_NO,                      KC_NO,   KC_NO,   KC_NO,   OUT_AUTO, BLEPROFILE_1,   PRINT_BATTERY,
+        KC_LCMD, KC_NO,   KC_VOLD, KC_MUTE, KC_VOLU, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   OUT_BT,   BLEPROFILE_2,   PRINT_BLE,
+        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   OUT_USB,  BLEPROFILE_3,   PRINT_INFO,
                                    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO
         );
     /*
